@@ -1,0 +1,23 @@
+{
+  "name": "greetings-webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggsbv/greetings-webapp.git"
+  },
+  "author": "ggsbv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ggsbv/greetings-webapp/issues"
+  },
+  "homepage": "https://github.com/ggsbv/greetings-webapp#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0"
+  }
+}

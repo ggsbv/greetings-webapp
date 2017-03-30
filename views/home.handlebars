@@ -1,0 +1,17 @@
+<div id="wrapper">
+  <div id="header">
+    <div id="userInput">
+      <h1>Greeting</h1>
+      <input id="inputName" type="text" name="inputName" placeholder="Enter your name...">
+      <input id="submitButton" type="button" name="submitButton" value="Greet me!">
+    </div>
+    <div id="userOutput">
+      <p>{{greetingOut}}</p>
+    </div>
+    <div id="totalUsersGreeted">
+      {{#each greetedName}}
+      <li>{{this}}</li>
+      {{/each}}
+    </div>
+  </div>
+</div>
