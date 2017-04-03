@@ -1,17 +1,23 @@
 <div id="wrapper">
   <div id="header">
     <div id="userInput">
-      <h1>Greeting</h1>
-      <input id="inputName" type="text" name="inputName" placeholder="Enter your name...">
-      <input id="submitButton" type="button" name="submitButton" value="Greet me!">
+
+      <form class="greetingForm" action="/greet" method="post">
+        <input id="inputName" type="text" name="inputName" placeholder="Enter your name...">
+        <input id="submitButton" type="submit" name="submitButton" value="Greet me!">
+
+        <div id="languageRadioBtns">
+          <input type="radio" name="languageSelect" value="fr"><p class="language">French</p>
+          <input type="radio" name="languageSelect" value="en"><p class="language">English</p>
+          <input type="radio" name="languageSelect" value="es"><p class="language">Spanish</p>
+        </div>
+      </form>
     </div>
     <div id="userOutput">
       <p>{{greetingOut}}</p>
     </div>
-    <div id="totalUsersGreeted">
-      {{#each greetedName}}
-      <li>{{this}}</li>
-      {{/each}}
+    <div id="history">
+      <a href="/counter">History</a>
     </div>
   </div>
 </div>

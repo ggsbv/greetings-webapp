@@ -3,12 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Greetings</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"> </script>
+    <style media="screen">
+      body {
+        font-family: Roboto;
+        background-color: dodgerblue;
+      }
+      .container {
+        width : 80%;
+        margin : auto;
+        background-color: grey;
+
+      }
+      .hidden {
+        display = "none";
+      }
+      #languageRadioBtns {
+        display: -webkit-box
+      }
+    </style>
   </head>
   <body>
 
-    {{{body}}}
+
+    <div class="container">
+      <h1>Greeting</h1>
+      {{{body}}}
+    </div>
 
   </body>
 </html>
