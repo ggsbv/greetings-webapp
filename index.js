@@ -12,6 +12,8 @@ var app = express();
 var usersGreeted = {};
 // var historyDiv = document.querySelector("#history");
 
+app.set('port', (process.env.PORT || 5000));
+
 app.engine("handlebars", expressHandlebars({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
@@ -67,6 +69,6 @@ app.post('/greet', function(req, res){
   res.render("home", data);
 });
 
-app.listen(3000, function(){
+app.listen(app.get('port'), function(){
   console.log("The frontend server is running on port 3000!")
 });
