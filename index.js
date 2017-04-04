@@ -3,7 +3,7 @@
 const whichLanguage = require("./whichLanguage");
 const addName = require("./addName");
 
-var MongoClient = require("mongodb").MongoClient;
+// var MongoClient = require("mongodb").MongoClient;
 var format = require("util").format;
 var express = require("express");
 var expressHandlebars = require("express-handlebars");
@@ -11,13 +11,13 @@ var bodyParser = require("body-parser");
 
 var app = express();
 
-MongoClient.connect("mongodb://127.0.0.1:27017/test", function(err, db){
-  if(err){
-    throw err;
-  } else {
-    console.log("Successfully connected to the database");
-  };
-});
+// MongoClient.connect("mongodb://127.0.0.1:27017/test", function(err, db){
+//   if(err){
+//     throw err;
+//   } else {
+//     console.log("Successfully connected to the database");
+//   };
+// });
 
 var usersGreeted = {};
 // var historyDiv = document.querySelector("#history");
