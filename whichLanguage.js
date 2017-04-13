@@ -7,7 +7,7 @@ module.exports = function(languageValue, name){
     case 'es':
       return "Hola, " + name;
     case 'en':
-    return "Hello, " + name;
+      return "Hello, " + name;
     default:
       return "Error"
   };

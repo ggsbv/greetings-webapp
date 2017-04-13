@@ -1,7 +1,8 @@
-<div id="totalUsersGreeted">
-  {{#each greetedName}}
-    <li><a href="/counter/{{this}}">{{this}}</a></li>
-  {{/each}}
+<div id="counter">
+  <h2>{{times}} unique users have been greeted to date</h2>
+  <form id="resetButtonForm" action="/counter/reset_counter" method="post">
+    <input id="resetButton" type="submit" name="resetButton" value="Reset">
+  </form>
 </div>
 
-<a href="/greetings">Home</a>
+<a href="/">Home</a>
